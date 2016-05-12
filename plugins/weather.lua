@@ -43,6 +43,7 @@ return {
 
   patterns = {
    "^#weather (.*)$",
+   "^#هوا (.*)$",
     },
   run = run
 }
