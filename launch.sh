@@ -35,12 +35,12 @@ install_luarocks() {
 install_rocks() {
   ./.luarocks/bin/luarocks install luasec
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "مشکلی ایجاد شد.خارج شدید.."; exit $RET;
   fi
 
   ./.luarocks/bin/luarocks install lbase64 20120807-3
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "مشکلی ایجاد شد.خارج شدید."; exit $RET;
   fi
 
 
@@ -114,10 +114,10 @@ else
   
   #Adding some color. By @iicc1 :D
    echo -e "\033[38;5;208m"
-   echo -e "      ____  ____ _____                        "
-   echo -e "     |    \|  _ )_   _|___ ____   __  __      "
-   echo -e "     | |_  )  _ \ | |/ .__|  _ \_|  \/  |     "
-   echo -e "     |____/|____/ |_|\____/\_____|_/\/\_|     "
+   echo -e "                           "
+   echo -e "      __   __ |\   |      /\   __   __   __   __   ___  |\        "
+   echo -e "     |  \/  | |/   |     /--\  |  \/  | |  \/  |  |---  |/         "
+   echo -e "     |_/\/\_| |\ . |__  /    \ |_/\/\_| |_/\/\_|  |___  |\             "
    echo -e "                                              \033[0;00m"
    echo -e "\e[36m"
 
