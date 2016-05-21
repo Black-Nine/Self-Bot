@@ -46,7 +46,7 @@ install_rocks() {
 
   ./.luarocks/bin/luarocks install redis-lua
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "مشکلی ایجاد و شما خارج شدید"; exit $RET;
   fi
 
   ./.luarocks/bin/luarocks install lua-cjson
@@ -71,7 +71,7 @@ install_rocks() {
 
   ./.luarocks/bin/luarocks install serpent
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "مشکلی ایجاد شده که باعث لغو عملیات شده است"; exit $RET;
   fi
 }
 
